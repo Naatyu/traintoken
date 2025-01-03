@@ -1,2 +1,2 @@
-# traintokken
+# TrainToken
 Trainer for tiktoken, OpenAI tokenizer.
