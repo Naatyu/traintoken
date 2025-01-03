@@ -1,0 +1,28 @@
+[project]
+name = "traintoken"
+version = "0.1.0"
+description = "Trainer for OpenAI TikToken tokenizer."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "colorlog>=6.9.0",
+    "numpy>=2.2.1",
+    "regex>=2024.11.6",
+    "ruff>=0.8.4",
+    "setuptools>=75.6.0",
+    "torch>=2.5.1",
+    "tqdm>=4.67.1",
+    "triton>=3.1.0",
+]
+
+[tool.ruff]
+line-length = 80
+
+[tool.ruff.lint]
+select = ["ALL"]
+ignore = ["D100", "INP001", "EXE002"]
+unfixable = ["F401"]
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
